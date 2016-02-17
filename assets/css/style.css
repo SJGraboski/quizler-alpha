@@ -12,8 +12,12 @@ h1, h2, h3 {
 	font-family: "jaf-lapture-display", serif;
 }
 
+h3 {
+	font-weight: bold;
+}
+
 p {
-	font-family:"ff-tisa-sans-web-pro", sans-serif;;
+	font-family:"ff-tisa-sans-web-pro", sans-serif;
 }
 
 .container {
@@ -40,7 +44,7 @@ p.win-word {
 }
 
 p.definition {
-	font-size:18px;
+	font-size:20px;
 }
 
 div.example {
@@ -53,7 +57,6 @@ div.example p {
 	margin-bottom: 0px;
 }
 
-div.
 /* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/)*/
 html {
   position: relative;

@@ -40,8 +40,8 @@ var polyptoton = new Word(
 	'Using the same word numerous times, but as a different part of speech or in a different grammatical form.',  
 	// example
 	"<p>\"And she bare him a son, and he called his name Gershom: " +
-	 "for he said, I have been a stranger in a strange land.\" " +
-	 "(King James Bible, Exodus 2:22)</p>", 
+	 "for he said, I have been a stranger in a strange land.\" </p>" +
+	 "<p>(King James Bible, Exodus 2:22)</p>", 
 	// sound
 	'assets/sounds/polyptoton.mp3',
 	// dictionary array
@@ -55,8 +55,8 @@ var antithesis = new Word(
 	'First state one point, then state something contradictory.',  
 	// example
 	"<p>\"It was the best of times, it was the worst of times, " +
-	"it was the age of wisdom, it was the age of foolishness [...] \" " +
-	 "(Mark Twain, \"A Tale of Two Cities\")", 
+	"it was the age of wisdom, it was the age of foolishness [...] \"</p> " +
+	"<p>(Mark Twain, \"A Tale of Two Cities\")</p>", 
 	// sound
 	'assets/sounds/antithesis.mp3',
 	// dictionary array
@@ -117,10 +117,10 @@ var aposiopesis = new Word(
 	// name
 	'aposiopesis',
 	// definition
-	'Ending a sentence prematurely (usually with an ellipsis) for dramatic effect.',
+	'Ending a sentence prematurely (usually with an ellipsis or em-dash) for dramatic effect.',
 	// example
 	"<p>\"\'Have fire in this garret before night or&#8212;\'\"</p>" +
-	"<p>\"He stopped because he could not go on. It was an aposiopesis of the purest kind\"</p>" +
+	"<p>\"He stopped because he could not go on. It was an aposiopesis of the purest kind.\"</p>" +
 	"<p>(Samuel Beckett, \"Murphy\")</p>", 
 	// sound
 	'assets/sounds/aposiopesis.mp3',
@@ -150,8 +150,8 @@ var anadiplosis = new Word(
 	'Using one of the last words of one statement ' +
 	'as one of the first words of the next, creating a link.',
 	// example
-	"<p>\"Suffering breeds character; chracter breeds faith; " +
-	"in the end faith will not dissapoint</p>" +
+	"<p>\"Suffering breeds character; character breeds faith; " +
+	"in the end faith will not dissapoint.</p>" +
 	"<p>(Jesse Jackson, 1988 Democratic National Convention Address)</p>", 
 	// sound
 	'assets/sounds/anadiplosis.mp3',
