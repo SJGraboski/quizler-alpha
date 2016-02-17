@@ -4,7 +4,7 @@
 var dictionary = [];
 
 // Word class constructor
-var Word = function(name, definition, example, sound, dict) {
+function Word(name, definition, example, sound, dict) {
 	// set Word properties
 	this.name = name;
 	this.definition = definition;
@@ -20,9 +20,17 @@ var Word = function(name, definition, example, sound, dict) {
 
 // ADD EACH WORD TO DICTIONARY
 var eloquence = new Word(
-	'Eloquence', 
+	'eloquence', 
 	'Sounding cool and stuff', 
 	'Aw yeah! This is happenin\'!', 
-	'no sound', 
+	'no sound',
+	dictionary
+);
+
+var noteloquence = new Word(
+	'noteloquence', 
+	'Sounding cool and stuff', 
+	'Aw yeah! This is happenin\'!', 
+	'no sound',
 	dictionary
 );
