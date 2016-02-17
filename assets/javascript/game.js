@@ -1,4 +1,4 @@
-// Eloquent Lifetaker FUN.OH
+// Eloquent Lifetaker 1.0
 
 // What letters will the program accept as input
 var allowedLetters = [
@@ -27,15 +27,18 @@ var game = {
 	// HTML updates
 	winCounter : function() {
 		document.querySelector("#win-counter").innerHTML = 
-			"<p>Wins: " + this.wins + "</p>";
+			"<p>Wins: </p> " +
+			"<p class='counter'>" + this.wins + "</p>";
 	},
 	guessCounter : function() {
 		document.querySelector("#guess-counter").innerHTML = 
-			"<p>Number of guesses remaining: " + this.guesses;
+			"<p>Number of guesses remaining: </p>" + 
+			"<p class='counter'>" + this.guesses + "</p>";
 	},
 	usedKeysCounter : function() {
 		document.querySelector("#letters-guessed").innerHTML = 
-			"<p>Letters you already guessed: " + this.usedKeys.join(", ");
+			"<p>Letters you already guessed: <p> " +
+			"<p class='counter'>" + this.usedKeys.join(", ") + "</p>";
 	},
 	wordDisplay : function() {
 		document.querySelector("#word-display").innerHTML = 
@@ -43,13 +46,27 @@ var game = {
 	},
 	victory : function() {
 		document.querySelector("#consequence").innerHTML = 
-			"<p>You Won!</p>" +
-			"<p class='win-word'>" + this.word.name + "</p>"
+			"<h3>You Won!</h3>" +
+			"<p class='win-word'>" + this.word.name + "</p>" +
+			"<p class='definition'>" + this.word.definition + "</p>" +
+			"<div class='example'>" + this.word.example + "</div>";
 	},
 	defeat : function() {
 		document.querySelector("#consequence").innerHTML = 
-			"<p>Too bad!</p>" +
+			"<h3>Too bad!</h3>" +
 			"<p class='lose-word'>The word was " + this.word.name + "...</p>"
+			"<p class='definition'>" + this.word.definition + "</p>" +
+			"<div class='example'>" + this.word.example + "</div>";
+	},
+
+	// Play sound of word
+	playWin : function() {
+		var audio = new Audio(this.word.sound);
+		audio.play();
+	},
+	playLose : function () {
+		var audio = new Audio("assets/sounds/wrong.mp3");
+		audio.play();
 	},
 
 	// start game
@@ -69,6 +86,7 @@ var game = {
 		this.winCounter();
 		this.guessCounter();
 		this.wordDisplay();
+		this.usedKeysCounter();
 	},
 
 	// input
@@ -112,6 +130,7 @@ var game = {
 			if (this.display.indexOf('_') === -1){
 				this.wins++;
 				this.victory();
+				this.playWin();
 				this.start();
 			}
 
@@ -120,6 +139,7 @@ var game = {
 			 */
 			if (this.guesses <= 0) {
 				this.defeat();
+				this.playLose();
 				this.start();
 			}
 		}

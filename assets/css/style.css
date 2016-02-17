@@ -1,0 +1,78 @@
+/* Basic Rules */
+body {
+	background-image: url("../images/small_steps.png");
+	margin: 20px 0 20px 0;
+}
+
+h1, h2, h3, p {
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: "jaf-lapture-display", serif;
+}
+
+p {
+	font-family:"ff-tisa-sans-web-pro", sans-serif;;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	border: 2px solid #a2a2a2;
+}
+
+/* Displays / Counter Numbers */
+div#word-display p {
+	font-size:36px;
+}
+
+p.counter {
+	font-size: 20px;
+}
+
+/* Win / Lose Text */
+p.win-word {
+	font-size:22px;
+	text-transform:capitalize;
+	color:goldenrod;
+	margin-bottom:0;
+}
+
+p.definition {
+	font-size:18px;
+}
+
+div.example {
+	margin-bottom:20px;
+}
+
+div.example p {
+	font-size:14px;
+	font-family: "jaf-lapture-display", serif;
+	margin-bottom: 0px;
+}
+
+div.
+/* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/)*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  padding-top: 20px;
+}
+
+#footer p{
+	font-size:16px;
+}

@@ -3,31 +3,55 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Eloquent Lifetaker - A Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://use.typekit.net/ekf8but.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
-<h1>Eloquent Lifetaker</h1>
-<h2>A hangman game about writerly eloquence</h2>
 
-<p>Press any key to get started!</p>
+<div class='container'>
+	
+	<!-- Title Row -->
+	<div class="row" id="title">
+		<div class='col-md-12'>
+			<h1>Eloquent Lifetaker</h1>
+			<h2>A hangman game about rhetorical technique</h2>
+			<p>Press any key to get started!</p>
+		</div>
+	</div>
 
-<div id="win-counter">
-	<p>Wins: </p>
+	<!-- Word Display -->
+	<div class="row">
+		<div id="word-display" class="col-md-8 col-md-offset-2">
+			<p></p>
+		</div>
+	</div>
+
+	<!-- Counter bar-->
+	<div class="row counter" id="counters">
+		<div id="guess-counter" class="col-xs-4">
+			<p>Number of guesses remaining: </p>
+		</div>
+
+		<div id="letters-guessed" class="col-xs-4">
+			<p>Letters you already guessed: </p>
+		</div>
+
+		<div id="win-counter" class="col-xs-4">
+			<p>Wins: </p>
+		</div>
+	</div>
+
+	<div class="row col-sm-8 col-sm-offset-2" id="consequence">
+		<p></p>
+	</div>
 </div>
 
-<div id="word-display">
-	<p></p>
-</div>
-
-<div id="letters-guessed">
-	<p>Letters you already guessed: </p>
-</div>
-
-<div id="guess-counter">
-	<p>Number of guesses remaining: </p>
-</div>
-
-<div id="consequence">
-	<p></p>
+<div id="footer">
+	<p>Web App developed by Steve Graboski &copy;2016. Techniques and examples from Mark Forsyth's <a href='http://www.barnesandnoble.com/w/the-elements-of-eloquence-mark-forsyth/1118739118?ean=9780425276181' target="_blank">"The Elements of Eloquence."</a></p>
 </div>
 	
 	<script type='text/javascript' src="assets/javascript/dictionary.js"></script>
