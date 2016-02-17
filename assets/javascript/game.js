@@ -104,14 +104,12 @@ var game = {
 				if (lett === this.word.name[i]) {
 					this.display[i] = lett;
 					checker = true;
-					console.log("Got one! \n" + this.display.join(" "));
 				}
 			}
 
 			// if checker's still false, take a guess point away
 			if (!checker) {
 				this.guesses--;
-				console.log("Wrong. " + this.guesses + " guesses left");
 			}
 
 			// add key to used keys array, sort it alphabetically
@@ -149,9 +147,8 @@ var game = {
 // onload event
 document.onLoad = game.start();
 
-// keyboard events
+// onkeyup events
 document.onkeyup = function(event){
 	var letter = String.fromCharCode(event.keyCode).toLowerCase();
-	console.log(letter);
 	game.input(letter);
 }
