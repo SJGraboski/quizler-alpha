@@ -83,7 +83,7 @@ var blazon = new Word(
 	// name
 	'blazon',
 	// definition
-	'An extended merism made up of similes, describind something in long detail.',  
+	'An extended merism made up of similes, describing something in long detail.',  
 	// example
 	"<p>Full fathom five thy father lies;</p>" +
 	"<p>Of his bones are coral made;</p>" +
