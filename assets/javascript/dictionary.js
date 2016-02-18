@@ -20,7 +20,7 @@ var alliteration = new Word(
 	// name
 	'alliteration',
 	// definition
-	'When a writer takes words with the same beginning letter or sound, and places them near eachother.',  
+	'When a writer takes words with the same beginning letter or sound, and places them near each other.',  
 	// example
 	"<p>The fair breeze blew, the white foam flew,</p>" +
 	"<p>The furrow followed free;</p>" +
